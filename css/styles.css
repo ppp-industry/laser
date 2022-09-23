@@ -1139,6 +1139,14 @@ main {
     .form-modal {
         max-width: 310px;
     }
+
+    .intro.uk {
+        background: url("../images/mobile_bg-uk.png") no-repeat top left;
+        background-size: cover;
+    }
+    .intro-uk__action {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 360px) {
