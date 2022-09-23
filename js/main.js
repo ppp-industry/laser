@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay = document.querySelector('.modal-overlay'),
         body = document.querySelector('body'),
         buttonOpen = document.querySelector('.feedback__btn'),
+        buttonOpenTwo = document.querySelector('.products__btn'),
         buttonClose = document.querySelector('.form-modal__close');
 
     buttonOpen.addEventListener('click', openModal);
+    buttonOpenTwo.addEventListener('click', openModal);
     overlay.addEventListener('click', closeModal);
     buttonClose.addEventListener('click', closeModal);
 
