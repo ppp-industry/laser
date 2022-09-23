@@ -1124,6 +1124,9 @@ main {
         color: #fff;
         text-transform: uppercase;
     }
+    .uk .products__new-price {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 410px) {
@@ -1138,19 +1141,23 @@ main {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .products__item {
         width: 100%;
     }
+
+    .products__item:nth-last-child(2) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
     .about {
         padding-right: 20px;
         padding-left: 20px;
     }
     .feedback-intro {
         right: 10px;
-    }
-    .products__item:nth-last-child(2) {
-        margin-bottom: 20px;
     }
 }
 /* \Adaptive */
