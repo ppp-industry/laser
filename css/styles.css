@@ -309,6 +309,21 @@ main {
     justify-content: center;
 }
 
+.intro__desc.uk .intro__big-desc {
+    position: relative;
+}
+
+.intro__desc.uk .intro__big-desc:before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 1px;
+    background: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+}
+
 .intro__small-desc {
     display: flex;
     flex-direction: column;
@@ -363,6 +378,49 @@ main {
     font-size: 12px;
     line-height: 15px;
     color: var(--main-color);
+}
+
+.intro-uk__action {
+    display: flex;
+    align-items: center;
+    padding-left: 39px;
+    padding-right: 142px;
+    border: 1px solid var(--main-color);
+    margin-bottom: 33px;
+}
+
+.intro-uk__action-title {
+    font-family: var(--font-family-a);
+    max-width: 184px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    color: var(--accent-red);
+}
+
+.intro-uk__action-numbers {
+    font-family: var(--font-family-a);
+    font-weight: 600;
+    font-size: 117px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-red);
+    margin-left: 20px;
+}
+
+.intro-uk__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.intro-uk__desc > strong {
+    font-weight: 600;
 }
 
 .intro__numbers {
@@ -435,6 +493,11 @@ main {
     height: 110%;
     bottom: -37px;
     left: 80%;
+}
+
+.intro__img.uk {
+    bottom: -45px;
+    left: 78%;
 }
 
 .intro__img img {
@@ -675,6 +738,10 @@ main {
     margin-bottom: 40px;
 }
 
+.products__list.uk .products__caption {
+    text-transform: initial;
+}
+
 .products__item {
     width: calc(25% - 15px);
     height: 100%;
@@ -776,6 +843,11 @@ main {
     transition: all .5s;
 }
 
+.products__indicated.uk {
+    font-size: 12px;
+    top: 45px;
+}
+
 .products__indicated-mobile {
     display: none;
 }
@@ -817,6 +889,12 @@ main {
 }
 
 /* Adaptive */
+@media (max-width: 1465px) {
+    .uk .products__new-price {
+        font-size: 45px;
+    }
+}
+
 @media (max-width: 1150px) {
     .intro__title {
         font-size: 45px;
@@ -825,6 +903,18 @@ main {
 
     .intro__img {
         left: 90%;
+    }
+    .intro-uk__action {
+        padding-right: 60px;
+        padding-left: 20px;
+    }
+    .intro-uk__action-numbers {
+        line-height: 120%;
+        font-size: 100px;
+    }
+    .intro__img.uk {
+        bottom: -75px;
+        left: 80%;
     }
 }
 
@@ -882,6 +972,21 @@ main {
         padding-right: 20px;
         padding-left: 20px;
     }
+    .intro-uk__action {
+        display: inline-flex;
+        flex-direction: column;
+        padding: 14px 23px;
+    }
+    .intro-uk__action-title {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: var(--font-family-m);
+    }
+    .intro-uk__action-numbers {
+        margin: 0;
+        font-size: 56px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -919,7 +1024,9 @@ main {
     .nav,
     .intro__small-desc,
     .intro__numbers,
-    .intro__sub-title {
+    .intro__sub-title,
+    .intro-uk__desc,
+    .intro__desc.uk .intro__big-desc:before {
         display: none;
     }
 
